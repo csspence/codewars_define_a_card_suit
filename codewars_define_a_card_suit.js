@@ -13,6 +13,12 @@ deck = ['2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','
 ('3♠') -> return 'spades'
 */
 
-function defineSuit(card) {
-  // good luck
+const defineSuit = (card) => {
+  const suits = {
+    '♣' : 'clubs',
+    '♦' : 'diamonds',
+    '♥' : 'hearts',
+    '♠' : 'spades'
+  };
+  return suits[card[card.length-1]];
 }
